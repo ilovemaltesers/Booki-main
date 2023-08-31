@@ -1,0 +1,901 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 {
+  display: flex;
+}
+
+#bookilogo {
+  height: 100px;
+  width: 200px;
+}
+
+/* Navigation */
+
+.navbar {
+  padding-left: 705px;
+}
+.navlist {
+  margin-top: 0;
+}
+.navlist li {
+  display: inline-block;
+}
+.navlist li a {
+  display: block;
+  padding: 35px;
+  border-top: 2px solid #f2f2f2;
+}
+
+.navlist li a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
+
+/*searchbox*/
+
+.searchbox {
+  display: flex;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#iconsearch {
+  background-color: #f2f2f2;
+  height: 30px;
+  padding: 7px 10px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.searchfield {
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-top-style: none;
+  border-bottom-color: #f2f2f2;
+  padding-left: 7px;
+}
+.searchfield:focus {
+  border-color: transparent;
+  outline: none;
+}
+
+.buttonsearch {
+  color: white;
+  background-color: #0065fc;
+  border: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.buttonsearchmob {
+  background-color: #0065fc;
+  border-radius: 10px;
+  color: white;
+  visibility: hidden;
+}
+
+/* filters */
+
+.filters {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.buttonbox {
+  display: flex;
+  gap: 20px;
+  padding-left: 25px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  min-width: 100px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  padding-right: 20px;
+  padding-left: 0px;
+  border-radius: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(242, 242, 242);
+  border-image: initial;
+  text-decoration: none;
+}
+
+.filter :hover {
+  color: purple;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #deebff;
+  color: #0065fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(222, 235, 255);
+  border-image: initial;
+  padding: 10px;
+}
+
+.buttonname {
+  padding-left: 10px;
+}
+
+/*info section*/
+
+.infowrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.infoicon {
+  color: #0065fc;
+  margin-top: 22px;
+  padding-right: 5px;
+}
+
+.morethan {
+  font-weight: 300;
+}
+
+/* accommodation section */
+
+.mainaccommodations {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.titlemarseille {
+  padding-left: 25px;
+}
+
+.accommodationmarseille {
+  width: 90%;
+  height: auto;
+  padding: 15px 15px 15px 15px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+.cardrow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px;
+  gap: 30px;
+}
+
+.card {
+  width: 30%;
+  height: 280px;
+  padding-top: 5px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imagewrap {
+  width: 100%;
+  padding: 7px 7px 7px 7px;
+}
+
+.imageleft {
+  width: 100%;
+  height: 120px;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.description {
+  padding-left: 7px;
+}
+
+.nighttext {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.stars {
+  padding: 7px 7px 20px 0px;
+}
+
+.bluestar {
+  color: #0065fc;
+}
+
+.greystar {
+  color: #f2f2f2;
+}
+
+.showmore {
+  padding-left: 22px;
+}
+
+.mostpopular {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 40px 15px 40px;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
+
+.mostpoptitlebox {
+  display: flex;
+}
+
+.blackstar {
+  padding-top: 20px;
+  padding-left: 247px;
+  font-size: x-large;
+}
+
+.cardmostpopular {
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cardmostpopular:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardflexright {
+  display: flex;
+  flex-direction: row;
+}
+
+.imagewrapright {
+  width: 50%;
+  height: 155px;
+  padding: 7px 7px 7px 7px;
+}
+
+.imageright {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.descriptionright {
+  width: 50%;
+  padding-left: 7px;
+}
+
+.nighttextright {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/*Activities*/
+
+.activities {
+  margin: 50px 30px;
+  padding: 0 0 20px 0;
+}
+
+.activitieswrap {
+  display: flex;
+  flex-flow: column wrap;
+  height: 500px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.actcard {
+  border-radius: 20px;
+  box-shadow: 0 5px 5px 1px #dfdede;
+  width: 22.5%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.actcard:nth-child(1),
+.actcard:nth-child(4) {
+  flex: 0 1 100%;
+}
+
+.actcard:nth-child(2) {
+  flex: 0 1 55%;
+}
+
+.actcard:nth-child(3) {
+  flex: 0 1 40%;
+}
+
+.actcard:nth-child(5) {
+  flex: 0 1 40%;
+}
+.actcard:nth-child(6) {
+  flex: 0 1 55%;
+}
+
+.activities h4 {
+  padding: 20px;
+}
+
+.actcard img {
+  height: 80px;
+  object-fit: cover;
+  flex: 1 1 0;
+  border-radius: 20px 20px 0 0;
+}
+
+.acttext {
+  margin-top: -10px;
+  margin-bottom: -9px;
+  margin-left: -6px;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 100%;
+}
+
+.aboutbox {
+  padding-left: 15px;
+}
+
+.ouraccommodationsbox {
+  padding-left: 169px;
+}
+
+.assistancebox {
+  padding-left: 200px;
+}
+
+.footerlist {
+  padding-left: 0%;
+  font-weight: 100;
+}
+.footerlist li {
+  color: black;
+  padding-left: 0%;
+}
+.footerlist li a {
+  color: black;
+}
+
+/*MEDIA QUERY TABLET*/
+
+@media screen and (max-width: 992px) {
+  #bookilogo {
+    margin-top: 50px;
+  }
+
+  .navbar {
+    padding-left: 0;
+    margin-top: 50px;
+  }
+
+  .navlist {
+    padding-left: 0;
+  }
+
+  .navlist li a {
+    border-bottom: solid 2px #f2f2f2;
+    border-top: hidden;
+    color: black;
+  }
+
+  .navlist li a:hover {
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+    border-top: hidden;
+  }
+
+  .searchbox {
+    margin-top: 25px;
+  }
+
+  .filters {
+    margin-top: 35px;
+  }
+
+  .filter {
+    font-size: 11px;
+  }
+
+  /* accommodations section tablet */
+
+  #accommodation {
+    width: 100%;
+  }
+
+  .mainaccommodations {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stars {
+    margin-bottom: 0;
+  }
+
+  .accommtext {
+    margin-top: 0;
+    height: 40px;
+  }
+
+  .accommodationmarseille {
+    width: 100%;
+  }
+
+  .mostpopular {
+    width: 100%;
+  }
+
+  .imagewrapright {
+    width: 80%;
+    height: 200px;
+  }
+
+  .accommtext {
+    padding-top: 15px;
+  }
+
+  .descriptionright {
+    padding-left: 3px;
+  }
+
+  .nighttextright {
+    font-weight: 300;
+  }
+
+  .coeur {
+    margin-top: 33px;
+    font-weight: 300;
+  }
+
+  .blackstar {
+    padding-left: 500px;
+  }
+
+  /* activites section tablet */
+
+  .activitieswrap {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+  }
+
+  .actcard {
+    height: 200px;
+    margin-top: 15px;
+  }
+
+  .actcard:nth-child(1),
+  .actcard:nth-child(4) {
+    flex: 0 1 30%;
+  }
+
+  .actcard:nth-child(2) {
+    flex: 0 1 30%;
+  }
+
+  .actcard:nth-child(3) {
+    flex: 0 1 30%;
+  }
+
+  .actcard:nth-child(5) {
+    flex: 0 1 30%;
+  }
+  .actcard:nth-child(6) {
+    flex: 0 1 30%;
+  }
+
+  /* footer section tablet */
+
+  .footer {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-top: 0;
+  }
+
+  .aboutbox {
+    padding-left: 20px;
+    padding-right: 41px;
+  }
+
+  .ouraccommodationsbox {
+    padding-right: 68px;
+    padding-left: 0;
+  }
+
+  .assistancebox {
+    padding-left: 0;
+  }
+}
+
+/*MOBILE PHONE media query*/
+
+@media screen and (max-width: 768px) {
+  body {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .buttonsearch {
+    display: none;
+  }
+
+  .buttonsearchmob {
+    background-color: #0065fc;
+    border-radius: 10px;
+    color: white;
+    visibility: visible;
+  }
+
+  .container1 {
+    display: block;
+    width: 100%;
+  }
+
+  #bookilogo {
+    position: relative;
+    margin-top: 35px;
+    left: 118px;
+  }
+
+  #find {
+    font-weight: 300px;
+    font-size: 23px;
+    margin-top: 50px;
+    padding-left: 30px;
+  }
+
+  .navbar {
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+
+  .navlist {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navlist li {
+    width: 100%;
+  }
+
+  .navlist li a {
+    text-align: center;
+    color: black;
+    border-bottom: 2px solid #f2f2f2;
+    border-top: hidden;
+  }
+
+  .navlist li a:hover {
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+    border-top: hidden;
+  }
+
+  #downtown {
+    padding-left: 30px;
+  }
+
+  .searchbox {
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #iconsearch {
+    width: 50px;
+    height: 50px;
+    padding: 11px 14px;
+  }
+
+  .pin {
+    font-size: x-large;
+  }
+
+  .searchfield {
+    width: 100%;
+    height: 50px;
+    border-bottom-right-radius: 7px;
+  }
+
+  .buttonsearchmob {
+    height: 44px;
+    width: 58px;
+    border: 0;
+    margin-top: 4px;
+  }
+
+  /*filters section mobile*/
+
+  .buttonbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 15px;
+    padding-left: 0;
+  }
+
+  .filters {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 17px;
+  }
+
+  #filterstitle {
+    position: relative;
+    bottom: 14px;
+    padding-left: 20px;
+    margin-top: 40px;
+  }
+
+  .filter {
+    justify-self: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 14px;
+  }
+
+  .lowcost {
+    order: 1;
+    margin-right: 0;
+  }
+  .romantic {
+    order: 2;
+  }
+  .family {
+    order: 3;
+  }
+  .pets {
+    order: 4;
+  }
+
+  /*info section mobile*/
+
+  .info {
+    padding-left: 20px;
+  }
+
+  /*accommodation section mobile*/
+
+  .titlemarseille {
+    font-size: 22px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 20px;
+  }
+
+  #accommodation {
+    display: flex;
+    width: 100%;
+  }
+
+  .mainaccommodations {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accommodationmarseille {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+  }
+
+  .cardrow {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+    height: 252px;
+  }
+
+  .imageleft {
+    border-radius: 10px;
+  }
+
+  /*most popular mobile*/
+
+  .mostpopular {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 0px;
+  }
+
+  .cardmostpopular {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .blackstar {
+    padding-left: 111px;
+  }
+
+  .cardflexright {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .imagewrapright {
+    width: 100%;
+    padding-top: 7px;
+    padding-top: 7px;
+    padding-right: 7px;
+  }
+
+  .imageright {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  .descriptionright {
+    width: 100%;
+  }
+
+  .accommtext {
+    margin-top: -3%;
+    padding-left: 5px;
+  }
+
+  .nighttextright {
+    padding-left: 5px;
+  }
+  .nighttext {
+    margin-top: -15px;
+    padding-left: 5px;
+  }
+  .coeur {
+    padding-left: 5px;
+  }
+  .stars {
+    padding-left: 5px;
+  }
+
+  /*activities section mob phone*/
+
+  .activities {
+    margin-top: 0;
+  }
+
+  .activitieswrap {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    gap: 10px;
+    height: 615px;
+  }
+
+  .actcard img {
+    height: 130px;
+  }
+  .actcard:nth-child(1),
+  .actcard:nth-child(4) {
+    width: 100%;
+    height: 70%;
+  }
+  .actcard:nth-child(2) {
+    width: 100%;
+  }
+  .actcard:nth-child(3) {
+    width: 100%;
+  }
+  .actcard:nth-child(5) {
+    width: 100%;
+  }
+  .actcard:nth-child(6) {
+    width: 100%;
+  }
+
+  /*footer mob phone*/
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    border-radius: 0px;
+    margin-top: -160px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutbox {
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .ouraccommodationsbox {
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .assistancebox {
+    width: 100%;
+    padding-left: 15px;
+  }
+}
