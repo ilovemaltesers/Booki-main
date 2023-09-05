@@ -277,9 +277,12 @@ body {
   display: flex;
 }
 
+.titlemostpopular {
+  flex: 0 0 90%;
+}
+
 .blackstar {
   padding-top: 20px;
-  padding-left: 60%;
   font-size: x-large;
 }
 
@@ -350,22 +353,22 @@ body {
 
 .actcard:nth-child(1),
 .actcard:nth-child(4) {
-  flex: 0 1 100%;
+  flex: 0 0 100%;
 }
 
 .actcard:nth-child(2) {
-  flex: 0 1 55%;
+  flex: 0 0 55%;
 }
 
 .actcard:nth-child(3) {
-  flex: 0 1 40%;
+  flex: 0 0 40%;
 }
 
 .actcard:nth-child(5) {
-  flex: 0 1 40%;
+  flex: 0 0 40%;
 }
 .actcard:nth-child(6) {
-  flex: 0 1 55%;
+  flex: 0 0 55%;
 }
 
 .activities h4 {
@@ -486,6 +489,10 @@ body {
     width: 100%;
   }
 
+  .titlemostpopular {
+    flex: 0 0 95%;
+  }
+
   .mostpopular {
     width: 100%;
   }
@@ -510,10 +517,6 @@ body {
   .coeur {
     margin-top: 33px;
     font-weight: 300;
-  }
-
-  .blackstar {
-    padding-left: 500px;
   }
 
   /* activites section tablet */
@@ -604,7 +607,7 @@ body {
   }
 
   #find {
-    font-weight: 300px;
+    font-weight: 300;
     font-size: 23px;
     margin-top: 50px;
     padding-left: 30px;
@@ -697,7 +700,6 @@ body {
   }
 
   .filter {
-    justify-self: none;
     margin-left: 20px;
     margin-right: 20px;
     padding-right: 14px;
@@ -781,10 +783,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-
-  .blackstar {
-    padding-left: 111px;
   }
 
   .cardflexright {
