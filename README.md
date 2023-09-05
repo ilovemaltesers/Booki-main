@@ -1,3 +1,3 @@
 # Booki
 Booki
-project url: https://ilovemaltesers.github.io/Booki/
+https://ilovemaltesers.github.io/Booki-main/
