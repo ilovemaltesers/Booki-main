@@ -49,9 +49,11 @@ body {
 .navlist {
   margin-top: 0;
 }
+
 .navlist li {
   display: inline-block;
 }
+
 .navlist li a {
   display: block;
   padding: 35px;
@@ -88,6 +90,7 @@ body {
   border-bottom-color: #f2f2f2;
   padding-left: 7px;
 }
+
 .searchfield:focus {
   border-color: transparent;
   outline: none;
@@ -142,6 +145,7 @@ body {
 
 .filter :hover {
   color: purple;
+  border-color: purple;
 }
 
 .icon {
@@ -181,7 +185,7 @@ body {
   font-weight: 300;
 }
 
-/* accommodation section */
+/* accommodation section accommodation in marseille */
 
 .mainaccommodations {
   width: 100%;
@@ -208,14 +212,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   gap: 30px;
 }
 
 .card {
   cursor: pointer;
   width: 30%;
-  height: 280px;
+  height: auto;
   padding-top: 5px;
   border-radius: 15px;
   background-color: white;
@@ -247,7 +251,13 @@ body {
   font-size: 15px;
   font-weight: 300;
 }
-
+.accommtext {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cardflexright .accommtext {
+  margin-top: 10px;
+}
 .stars {
   padding: 7px 7px 20px 0px;
 }
@@ -264,8 +274,10 @@ body {
   padding-left: 22px;
 }
 
+/* accommodations section most popular */
+
 .mostpopular {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   padding: 15px 40px 15px 40px;
@@ -319,7 +331,6 @@ body {
 
 .descriptionright {
   width: 50%;
-  padding-left: 7px;
 }
 
 .nighttextright {
@@ -485,12 +496,20 @@ body {
     height: 40px;
   }
 
+  .nighttext {
+    margin-top: 14px;
+  }
+
   .accommodationmarseille {
     width: 100%;
   }
 
   .titlemostpopular {
     flex: 0 0 95%;
+  }
+
+  .cardflexright .accommtext {
+    margin-top: 15px;
   }
 
   .mostpopular {
@@ -502,8 +521,8 @@ body {
     height: 200px;
   }
 
-  .accommtext {
-    padding-top: 15px;
+  .imageright {
+    padding: 3px;
   }
 
   .descriptionright {
@@ -725,7 +744,7 @@ body {
     padding-left: 20px;
   }
 
-  /*accommodation section mobile*/
+  /*accommodation marseille section mobile*/
 
   .titlemarseille {
     font-size: 22px;
@@ -761,7 +780,7 @@ body {
   .card {
     flex-direction: column;
     width: 100%;
-    height: 252px;
+    height: auto;
   }
 
   .imageleft {
@@ -811,17 +830,20 @@ body {
   }
 
   .accommtext {
-    margin-top: -3%;
+    padding-top: 3px;
     padding-left: 5px;
   }
 
   .nighttextright {
     padding-left: 5px;
+    margin-top: 0;
   }
+
   .nighttext {
-    margin-top: -15px;
     padding-left: 5px;
+    margin-top: 0;
   }
+
   .coeur {
     padding-left: 5px;
   }
@@ -829,7 +851,7 @@ body {
     padding-left: 5px;
   }
 
-  /*activities section mob phone*/
+  /*activities section mobile*/
 
   .activities {
     margin-top: 0;
@@ -864,7 +886,7 @@ body {
     width: 100%;
   }
 
-  /*footer mob phone*/
+  /*footer mobile*/
 
   html {
     height: 100%;
